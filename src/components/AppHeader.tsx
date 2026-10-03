@@ -53,7 +53,7 @@ export function AppHeader() {
               <div className="hidden sm:flex items-center gap-2">
                 <span className="w-8 h-8 rounded-full bg-coral border border-border" />
                 <span className="font-bold text-sm">
-                  {fullName || user.user_metadata?.username || "المعلمة"}
+                  {fullName || user.user_metadata?.["username"] || "المعلمة"}
                   {isAdmin ? " · مديرة" : ""}
                 </span>
               </div>
